@@ -47,8 +47,8 @@ function get_zsh_pwd() {
 }
 
 function get_rbenv_version() {
-    rb_ver=`rbenv version | awk '{print $1}'`
-    echo $rb_ver
+    #rb_ver=`rbenv version | awk '{print $1}'`
+    #echo $rb_ver
 }
 
 local pl_static_len=34
