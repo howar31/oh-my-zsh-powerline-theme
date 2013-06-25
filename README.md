@@ -36,5 +36,5 @@ Modified two-line version:
 ## Requirements
 
 * Vim Powerline patched font : See [Powerline for vim](https://github.com/Lokaltog/vim-powerline.git) for more info.
-* **Patched font Monaco has already included as "Monaco_Linux-powerline.ttf".**
+* *Patched font Monaco has already included as "Monaco_Linux-powerline.ttf".*
 * Z shell (zsh) : See [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for more info.
