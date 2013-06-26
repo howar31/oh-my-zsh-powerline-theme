@@ -69,6 +69,7 @@ See [Tom Ryder's blog](http://blog.sanctum.geek.nz/putty-configuration/) for mor
 	> done
 	```
 	* Type `reset` to fix your termianl after testing.
+![PuTTY 256-color test](https://raw.github.com/howar31/oh-my-zsh-powerline-theme/master/putty-256color-test.png)
 
 3. `Window` > `Translation` > `Character set translation` > `Remote character set`: `UTF-8` 
 4. `Window` > `Appearance` > `Font settings`
