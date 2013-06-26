@@ -43,4 +43,4 @@ Dim version:
 ## Note
 
 * This version not only modified the color scheme but also used variables to manage colors for future easily modification.
-* Due to my own environment settings, I've disabled the ruby features in this theme.  To re-enable it, just simply remove the "#" in front of the lines in the function.
+* Due to my own environment settings, I've disabled the ruby features in this theme.  To re-enable them, just simply remove the "#" in front of the lines in the function.
