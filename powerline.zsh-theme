@@ -4,16 +4,24 @@
 #Some code borrowed from Phil's Prompt and bira theme
 #http://aperiodic.net/phil/prompt/
 
+# Dim version modified by Howar31
 
-POWERLINE_COLOR_BG_GRAY=%K{240}
-POWERLINE_COLOR_BG_LIGHT_GRAY=%K{240}
-POWERLINE_COLOR_BG_WHITE=%K{255}
-POWERLINE_COLOR_BG_PURPLE=%K{225}
-
-POWERLINE_COLOR_FG_GRAY=%F{240}
-POWERLINE_COLOR_FG_LIGHT_GRAY=%F{240}
-POWERLINE_COLOR_FG_WHITE=%F{255}
-
+DIM_DIR_BG=251
+DIM_DIR_FG=black
+DIM_GIT_BG=245
+DIM_GIT_FG=black
+DIM_RUBY_BG=239
+DIM_RUBY_FG=black
+DIM_FILL_BG=233
+DIM_FILL_FG=white
+DIM_TIME_BG=239
+DIM_TIME_FG=251
+DIM_DATE_BG=245
+DIM_DATE_FG=233
+DIM_USER_BG=white
+DIM_USER_FG=blue
+DIM_HOST_BG=233
+DIM_HOST_FG=239
 
 GIT_DIRTY_COLOR=%F{124}
 GIT_CLEAN_COLOR=%F{118}
@@ -44,6 +52,7 @@ function get_zsh_pwd() {
 	path='~'
     fi
     echo $path
+    #echo "${PWD/$HOME/~}"
 }
 
 function get_rbenv_version() {
@@ -51,23 +60,26 @@ function get_rbenv_version() {
     #echo $rb_ver
 }
 
+# prompt outline:
+# [info.dir]>[info.git]>[info.ruby]>[fill]<[time]<[date]
+# [user]>[host]>
+
 local pl_static_len=34
 
-local pl_rvm_info='%K{166}%F{216} $(rvm-prompt i v g)'" %k%f""%F{166}%K{129}"$'\u2b80'%f
-local pl_rbenv_info='%K{166}%F{216}$(get_rbenv_version)'" %k%f""%F{166}%K{129}"$'\u2b80'%f
-local pl_dir="%F{black}%K{118} %1~ %k%F{118}%K{075}"$'\u2b80'"%f%k"
-local pl_git_branch="%K{075}%F{237}"$'`git_prompt_info`'" %k%f%F{075}%K{166}"$'\u2b80'" %f%k"
+local pl_dir="%K{$DIM_DIR_BG}%F{$DIM_DIR_FG} %1~ %k%F{$DIM_DIR_BG}%K{$DIM_GIT_BG}"$'\u2b80'"%f%k"
+
+local pl_git_branch="%K{$DIM_GIT_BG}%F{$DIM_GIT_FG}"$'`git_prompt_info`'" %k%f%F{$DIM_GIT_BG}%K{$DIM_RUBY_BG}"$'\u2b80'" %f%k"
+
+local pl_rvm_info='%K{$DIM_RUBY_BG}%F{$DIM_RUBY_FG} $(rvm-prompt i v g)'" %k%f""%F{$DIM_RUBY_BG}%K{$DIM_FILL_BG}"$'\u2b80'%f
+local pl_rbenv_info='%K{$DIM_RUBY_BG}%F{$DIM_RUBY_FG}$(get_rbenv_version)'" %k%f""%F{$DIM_RUBY_BG}%K{$DIM_FILL_BG}"$'\u2b80'%f
+
 local pl_info="${pl_dir}${pl_git_branch}${pl_rbenv_info}"
-
 local pl_fill='${(l.((${COLUMNS}+2-${#$(get_git_branch)}-${#$(get_zsh_pwd)}-${#$(get_rbenv_version)}-$pl_static_len))...)}'
+local pl_time='%F{$DIM_TIME_BG}'$'\u2b82'"%f%K{$DIM_TIME_BG} %F{$DIM_TIME_FG}%D{%H:%M:%S} %F{$DIM_DATE_BG}"$'\u2b82'"%f%k%K{$DIM_DATE_BG}%F{$DIM_DATE_FG} %D{%Y-%m-%d} %f%k"
 
-local pl_time=$POWERLINE_COLOR_FG_WHITE$'\u2b82'"%f$POWERLINE_COLOR_BG_WHITE $POWERLINE_COLOR_FG_GRAY%D{%H:%M:%S} "$'\u2b82'"%f%k$POWERLINE_COLOR_BG_GRAY$POWERLINE_COLOR_FG_WHITE %D{%Y-%m-%d} %f%k"
-
-local pl_user="%K{blue}%F{white} %n %f%k%F{blue}%K{white}"$'\u2b80'"%f%k"
-local pl_host="%K{white}%F{black}@%m%k%f%F{white}"$'\u2b80'"%f%k"
+local pl_user="%K{$DIM_USER_BG}%F{$DIM_USER_FG} %n %f%k%F{$DIM_USER_BG}%K{$DIM_HOST_BG}"$'\u2b80'"%f%k"
+local pl_host="%K{$DIM_HOST_BG}%F{$DIM_HOST_FG} @%m %k%f%F{$DIM_HOST_BG}"$'\u2b80'"%f%k"
 
 PROMPT="
 ${pl_info}${pl_fill}${pl_time}
 ${pl_user}${pl_host} "
-
-#RPROMPT=$POWERLINE_COLOR_FG_WHITE$'\u2b82'"%f$POWERLINE_COLOR_BG_WHITE $POWERLINE_COLOR_FG_GRAY%D{%H:%M:%S}  "$'\u2b82'"%f%k$POWERLINE_COLOR_BG_GRAY$POWERLINE_COLOR_FG_WHITE %D{%Y-%m-%d} %f%k"

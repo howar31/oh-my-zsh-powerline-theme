@@ -12,13 +12,14 @@ Dim colored version modified by Howar31.
 
 ## Preview
 
-Pictures below have not updated.
-
 Original version:
 ![Preview](http://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme/raw/master/preview.png)
 
-Modified two-line version:
+[Modified two-line](https://github.com/brucehsu/oh-my-zsh-powerline-theme) version:
 ![Preview](https://raw.github.com/brucehsu/oh-my-zsh-powerline-theme/master/twoline-preview.png)
+
+Dim version:
+![Preview](https://raw.github.com/howar31/oh-my-zsh-powerline-theme/master/dim-preview.png)
 
 ## Set Up
 
