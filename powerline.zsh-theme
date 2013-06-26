@@ -6,6 +6,7 @@
 
 # Dim version modified by Howar31
 
+# Color settings
 DIM_DIR_BG=251
 DIM_DIR_FG=black
 DIM_GIT_BG=245
@@ -55,6 +56,7 @@ function get_zsh_pwd() {
     #echo "${PWD/$HOME/~}"
 }
 
+# ruby features are disabled in this theme. To re-enable them, simply remove the "#" in this function.
 function get_rbenv_version() {
     #rb_ver=`rbenv version | awk '{print $1}'`
     #echo $rb_ver
@@ -79,6 +81,7 @@ local pl_time='%F{$DIM_TIME_BG}'$'\u2b82'"%f%K{$DIM_TIME_BG} %F{$DIM_TIME_FG}%D{
 
 local pl_user="%K{$DIM_USER_BG}%F{$DIM_USER_FG} %n %f%k%F{$DIM_USER_BG}%K{$DIM_HOST_BG}"$'\u2b80'"%f%k"
 local pl_host="%K{$DIM_HOST_BG}%F{$DIM_HOST_FG} @%m %k%f%F{$DIM_HOST_BG}"$'\u2b80'"%f%k"
+
 
 PROMPT="
 ${pl_info}${pl_fill}${pl_time}
