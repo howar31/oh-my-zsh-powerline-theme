@@ -30,7 +30,7 @@ Dim version:
 
 * Z shell (zsh) and oh-my-zsh
 	* See [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for more info.
-	* Installing zsh/oh-my-zsh on Linux(Ubuntu), see [Howar31's blog](http://howar31.blogspot.tw/2013/06/install-zsh-oh-my-zsh-on-ubuntu.html) for more info.
+	* Installing zsh/oh-my-zsh on Linux(Ubuntu), see [Howar31's blog](http://blog.howar31.com/install-zsh-oh-my-zsh-on-ubuntu/) for more info.
 * Patched font for fancy symbols
 	* Vim Powerline patched font : See [Powerline for vim](https://github.com/Lokaltog/vim-powerline.git) for more info.
 	* Patch your font for your self.
