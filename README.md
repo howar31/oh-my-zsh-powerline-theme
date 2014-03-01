@@ -10,6 +10,8 @@ This is a modified two-line version: one for information, one for input.
 
 Dim colored version is modified by Howar31.
 
+> zsh installation instruction in [Howar31 blog] (http://blog.howar31.com/install-zsh-oh-my-zsh-on-ubuntu/) .
+
 ## Preview
 
 [Original](https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme) version:
