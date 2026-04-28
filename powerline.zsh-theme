@@ -76,7 +76,7 @@ local pl_rvm_info='%K{$DIM_RUBY_BG}%F{$DIM_RUBY_FG} $(rvm-prompt i v g)'" %k%f""
 local pl_rbenv_info='%K{$DIM_RUBY_BG}%F{$DIM_RUBY_FG}$(get_rbenv_version)'" %k%f""%F{$DIM_RUBY_BG}%K{$DIM_FILL_BG}"$'\u2b80'%f
 
 local pl_info="${pl_dir}${pl_git_branch}${pl_rbenv_info}"
-local pl_fill='${(l.((${COLUMNS}+2-${#$(get_git_branch)}-${#$(get_zsh_pwd)}-${#$(get_rbenv_version)}-$pl_static_len))...)}'
+local pl_fill='${(l.((${COLUMNS}+1-${#$(get_git_branch)}-${#$(get_zsh_pwd)}-${#$(get_rbenv_version)}-$pl_static_len))...)}'
 local pl_time='%F{$DIM_TIME_BG}'$'\u2b82'"%f%K{$DIM_TIME_BG} %F{$DIM_TIME_FG}%D{%H:%M:%S} %F{$DIM_DATE_BG}"$'\u2b82'"%f%k%K{$DIM_DATE_BG}%F{$DIM_DATE_FG} %D{%Y-%m-%d} %f%k"
 
 local pl_user="%K{$DIM_USER_BG}%F{$DIM_USER_FG} %n %f%k%F{$DIM_USER_BG}%K{$DIM_HOST_BG}"$'\u2b80'"%f%k"
