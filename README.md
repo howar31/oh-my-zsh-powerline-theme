@@ -1,10 +1,10 @@
 # oh-my-zsh-powerline-theme
 
-[![License: MIT](https://img.shields.io/github/license/howar31/oh-my-zsh-powerline-theme)](LICENSE)
-[![Made with Zsh](https://img.shields.io/badge/made%20with-Zsh-1A2C34?logo=gnu-bash&logoColor=white)](https://www.zsh.org/)
-[![GitHub stars](https://img.shields.io/github/stars/howar31/oh-my-zsh-powerline-theme?style=social)](https://github.com/howar31/oh-my-zsh-powerline-theme/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/howar31/oh-my-zsh-powerline-theme)](https://github.com/howar31/oh-my-zsh-powerline-theme/commits)
-[![Ko-fi](https://img.shields.io/badge/sponsor-Ko--fi-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/howar31)
+[![License: MIT](https://img.shields.io/github/license/howar31/oh-my-zsh-powerline-theme?style=flat-square)](LICENSE)
+[![Made with Zsh](https://img.shields.io/badge/made%20with-Zsh-1A2C34?logo=gnu-bash&logoColor=white&style=flat-square)](https://www.zsh.org/)
+[![GitHub stars](https://img.shields.io/github/stars/howar31/oh-my-zsh-powerline-theme?style=flat-square)](https://github.com/howar31/oh-my-zsh-powerline-theme/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/howar31/oh-my-zsh-powerline-theme?style=flat-square)](https://github.com/howar31/oh-my-zsh-powerline-theme/commits)
+[![Ko-fi](https://img.shields.io/badge/sponsor-Ko--fi-FF5E5B?logo=ko-fi&logoColor=white&style=flat-square)](https://ko-fi.com/howar31)
 
 *This is a fork of https://github.com/brucehsu/oh-my-zsh-powerline-theme*
 
