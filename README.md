@@ -4,7 +4,7 @@
 [![Made with Zsh](https://img.shields.io/badge/made%20with-Zsh-1A2C34?logo=gnu-bash&logoColor=white&style=flat-square)](https://www.zsh.org/)
 [![GitHub stars](https://img.shields.io/github/stars/howar31/oh-my-zsh-powerline-theme?style=flat-square)](https://github.com/howar31/oh-my-zsh-powerline-theme/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/howar31/oh-my-zsh-powerline-theme?style=flat-square)](https://github.com/howar31/oh-my-zsh-powerline-theme/commits)
-[![Ko-fi](https://img.shields.io/badge/sponsor-Ko--fi-FF5E5B?logo=ko-fi&logoColor=white&style=flat-square)](https://ko-fi.com/howar31)
+[![Sponsor](https://img.shields.io/badge/Sponsor-donate.howar31.com-b4532c?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwLjg0IDQuNjFhNS41IDUuNSAwIDAgMC03Ljc4IDBMMTIgNS42N2wtMS4wNi0xLjA2YTUuNSA1LjUgMCAwIDAtNy43OCA3Ljc4bDEuMDYgMS4wNkwxMiAyMS4yM2w3Ljc4LTcuNzggMS4wNi0xLjA2YTUuNSA1LjUgMCAwIDAgMC03Ljc4eiIvPjwvc3ZnPg==)](https://donate.howar31.com/)
 
 *This is a fork of https://github.com/brucehsu/oh-my-zsh-powerline-theme*
 
